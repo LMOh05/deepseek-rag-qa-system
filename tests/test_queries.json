@@ -1,0 +1,65 @@
+{
+  "description": "阶段二检索优化测试问题（10条），覆盖不同问题类型",
+  "queries": [
+    {
+      "id": 1,
+      "question": "什么是机器学习",
+      "type": "概念解释",
+      "expected_doc": "机器学习入门.txt"
+    },
+    {
+      "id": 2,
+      "question": "监督学习和无监督学习有什么区别",
+      "type": "细节对比",
+      "expected_doc": "机器学习入门.txt"
+    },
+    {
+      "id": 3,
+      "question": "RAG的工作流程是什么",
+      "type": "事实查询",
+      "expected_doc": "RAG技术详解.txt"
+    },
+    {
+      "id": 4,
+      "question": "什么是词嵌入",
+      "type": "概念解释",
+      "expected_doc": "自然语言处理基础.txt"
+    },
+    {
+      "id": 5,
+      "question": "深度学习的常用框架有哪些",
+      "type": "事实查询",
+      "expected_doc": "机器学习入门.txt"
+    },
+    {
+      "id": 6,
+      "question": "机器学习有哪些常见算法",
+      "type": "列举查询",
+      "expected_doc": "机器学习入门.txt"
+    },
+    {
+      "id": 7,
+      "question": "RAG比纯大语言模型好在哪里",
+      "type": "对比分析",
+      "expected_doc": "RAG技术详解.txt"
+    },
+    {
+      "id": 8,
+      "question": "中文NLP有什么特殊挑战",
+      "type": "概念解释",
+      "expected_doc": "自然语言处理基础.txt"
+    },
+    {
+      "id": 9,
+      "question": "RAG有哪些局限性",
+      "type": "事实查询",
+      "expected_doc": "RAG技术详解.txt"
+    },
+    {
+      "id": 10,
+      "question": "预训练语言模型如何改变NLP领域",
+      "type": "概念解释",
+      "expected_doc": "自然语言处理基础.txt"
+    }
+  ]
+}

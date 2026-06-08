@@ -1,0 +1,150 @@
+[
+  {
+    "config": "基线(固定窗口+向量)",
+    "retrieval_mode": "dense",
+    "total": 50,
+    "recall_at_3": 0.86,
+    "recall_at_5": 0.86,
+    "mrr_sum": 0.0,
+    "bad_cases": [],
+    "edge_cases_handled": 7,
+    "core_total": 43,
+    "core_recall_at_3": 1.0,
+    "core_recall_at_5": 1.0,
+    "mrr": 0.7833,
+    "core_mrr": 0.9109,
+    "by_type": {
+      "概念解释": {
+        "total": 13,
+        "recall3": 13,
+        "recall5": 13
+      },
+      "事实查询": {
+        "total": 20,
+        "recall3": 20,
+        "recall5": 20
+      },
+      "跨文档综合": {
+        "total": 9,
+        "recall3": 9,
+        "recall5": 9
+      },
+      "边缘case": {
+        "total": 8,
+        "recall3": 1,
+        "recall5": 1
+      }
+    }
+  },
+  {
+    "config": "语义分块+向量",
+    "retrieval_mode": "dense",
+    "total": 50,
+    "recall_at_3": 0.84,
+    "recall_at_5": 0.86,
+    "mrr_sum": 0.0,
+    "bad_cases": [],
+    "edge_cases_handled": 7,
+    "core_total": 43,
+    "core_recall_at_3": 0.9767,
+    "core_recall_at_5": 1.0,
+    "mrr": 0.8217,
+    "core_mrr": 0.9554,
+    "by_type": {
+      "概念解释": {
+        "total": 13,
+        "recall3": 12,
+        "recall5": 13
+      },
+      "事实查询": {
+        "total": 20,
+        "recall3": 20,
+        "recall5": 20
+      },
+      "跨文档综合": {
+        "total": 9,
+        "recall3": 9,
+        "recall5": 9
+      },
+      "边缘case": {
+        "total": 8,
+        "recall3": 1,
+        "recall5": 1
+      }
+    }
+  },
+  {
+    "config": "语义分块+混合",
+    "retrieval_mode": "hybrid",
+    "total": 50,
+    "recall_at_3": 0.86,
+    "recall_at_5": 0.86,
+    "mrr_sum": 0.0,
+    "bad_cases": [],
+    "edge_cases_handled": 7,
+    "core_total": 43,
+    "core_recall_at_3": 1.0,
+    "core_recall_at_5": 1.0,
+    "mrr": 0.84,
+    "core_mrr": 0.9767,
+    "by_type": {
+      "概念解释": {
+        "total": 13,
+        "recall3": 13,
+        "recall5": 13
+      },
+      "事实查询": {
+        "total": 20,
+        "recall3": 20,
+        "recall5": 20
+      },
+      "跨文档综合": {
+        "total": 9,
+        "recall3": 9,
+        "recall5": 9
+      },
+      "边缘case": {
+        "total": 8,
+        "recall3": 1,
+        "recall5": 1
+      }
+    }
+  },
+  {
+    "config": "语义分块+混合(最终)",
+    "retrieval_mode": "hybrid",
+    "total": 50,
+    "recall_at_3": 0.86,
+    "recall_at_5": 0.86,
+    "mrr_sum": 0.0,
+    "bad_cases": [],
+    "edge_cases_handled": 7,
+    "core_total": 43,
+    "core_recall_at_3": 1.0,
+    "core_recall_at_5": 1.0,
+    "mrr": 0.84,
+    "core_mrr": 0.9767,
+    "by_type": {
+      "概念解释": {
+        "total": 13,
+        "recall3": 13,
+        "recall5": 13
+      },
+      "事实查询": {
+        "total": 20,
+        "recall3": 20,
+        "recall5": 20
+      },
+      "跨文档综合": {
+        "total": 9,
+        "recall3": 9,
+        "recall5": 9
+      },
+      "边缘case": {
+        "total": 8,
+        "recall3": 1,
+        "recall5": 1
+      }
+    }
+  }
+]

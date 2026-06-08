@@ -22,7 +22,7 @@ class VectorStore:
         from src.config import config
         from src.embedder import get_embedding
 
-        self.persist_dir = str(persist_dir or config.CHROMA_DIR).replace("chroma_db", "faiss_index")
+        self.persist_dir = str(persist_dir or config.FAISS_DIR)
         self.embedding = embedding or get_embedding()
         self._store: Optional[FAISS] = None
 

@@ -1,0 +1,312 @@
+{
+  "description": "RAG 系统评测测试集 - 50条Q&A对，覆盖4种问题类型",
+  "created": "2026-06-07",
+  "questions": [
+    {
+      "id": 1, "type": "概念解释",
+      "question": "什么是机器学习",
+      "answer_snippet": "机器学习是人工智能的一个分支，使计算机能够从数据中学习",
+      "relevant_docs": ["机器学习入门.txt"]
+    },
+    {
+      "id": 2, "type": "事实查询",
+      "question": "监督学习和无监督学习有什么区别",
+      "answer_snippet": "监督学习使用带标签的数据进行训练，无监督学习使用无标签数据发现隐藏结构",
+      "relevant_docs": ["机器学习入门.txt"]
+    },
+    {
+      "id": 3, "type": "事实查询",
+      "question": "RAG的工作流程是什么",
+      "answer_snippet": "文档处理、查询向量化、相似度检索、上下文增强、生成回答",
+      "relevant_docs": ["RAG技术详解.txt"]
+    },
+    {
+      "id": 4, "type": "概念解释",
+      "question": "什么是词嵌入技术",
+      "answer_snippet": "将词语映射到低维稠密向量，包括Word2Vec、GloVe、BERT等",
+      "relevant_docs": ["自然语言处理基础.txt"]
+    },
+    {
+      "id": 5, "type": "事实查询",
+      "question": "深度学习常用的框架有哪些",
+      "answer_snippet": "PyTorch和TensorFlow",
+      "relevant_docs": ["机器学习入门.txt"]
+    },
+    {
+      "id": 6, "type": "事实查询",
+      "question": "机器学习有哪些常见算法",
+      "answer_snippet": "线性回归、决策树、支持向量机、随机森林、K-Means聚类、PCA",
+      "relevant_docs": ["机器学习入门.txt"]
+    },
+    {
+      "id": 7, "type": "跨文档综合",
+      "question": "RAG比纯大语言模型好在哪里",
+      "answer_snippet": "降低幻觉、知识更新、可溯源、成本低，基于真实文档回答",
+      "relevant_docs": ["RAG技术详解.txt"]
+    },
+    {
+      "id": 8, "type": "概念解释",
+      "question": "中文自然语言处理有什么特殊挑战",
+      "answer_snippet": "分词没有自然词边界、多义性、新词识别",
+      "relevant_docs": ["自然语言处理基础.txt"]
+    },
+    {
+      "id": 9, "type": "事实查询",
+      "question": "RAG技术有哪些局限性",
+      "answer_snippet": "检索质量依赖、切片策略敏感、多跳推理困难",
+      "relevant_docs": ["RAG技术详解.txt"]
+    },
+    {
+      "id": 10, "type": "概念解释",
+      "question": "预训练语言模型如何改变了NLP领域",
+      "answer_snippet": "通过大规模预训练加下游微调的范式，在各类任务上取得突破",
+      "relevant_docs": ["自然语言处理基础.txt"]
+    },
+    {
+      "id": 11, "type": "事实查询",
+      "question": "机器学习的三大类别是什么",
+      "answer_snippet": "监督学习、无监督学习、强化学习",
+      "relevant_docs": ["机器学习入门.txt"]
+    },
+    {
+      "id": 12, "type": "概念解释",
+      "question": "什么是强化学习",
+      "answer_snippet": "通过与环境的交互来学习，智能体通过试错获得奖励或惩罚，目标是最大化累积奖励",
+      "relevant_docs": ["机器学习入门.txt"]
+    },
+    {
+      "id": 13, "type": "事实查询",
+      "question": "RAG的英文全称是什么",
+      "answer_snippet": "Retrieval-Augmented Generation，检索增强生成",
+      "relevant_docs": ["RAG技术详解.txt"]
+    },
+    {
+      "id": 14, "type": "概念解释",
+      "question": "什么是命名实体识别",
+      "answer_snippet": "从文本中识别和分类命名实体，如人名、地名、组织名",
+      "relevant_docs": ["自然语言处理基础.txt"]
+    },
+    {
+      "id": 15, "type": "事实查询",
+      "question": "自然语言处理有哪些核心任务",
+      "answer_snippet": "文本分类、命名实体识别、文本生成、问答系统",
+      "relevant_docs": ["自然语言处理基础.txt"]
+    },
+    {
+      "id": 16, "type": "跨文档综合",
+      "question": "机器学习和深度学习的关系是什么",
+      "answer_snippet": "深度学习是机器学习的子领域，使用多层神经网络处理复杂模式",
+      "relevant_docs": ["机器学习入门.txt"]
+    },
+    {
+      "id": 17, "type": "事实查询",
+      "question": "机器学习的典型流程包括哪些步骤",
+      "answer_snippet": "数据收集、数据预处理、特征工程、模型选择、模型训练、模型评估、模型部署",
+      "relevant_docs": ["机器学习入门.txt"]
+    },
+    {
+      "id": 18, "type": "概念解释",
+      "question": "什么是文本分类",
+      "answer_snippet": "将文本分配到预定义的类别中，应用场景包括情感分析、垃圾邮件检测",
+      "relevant_docs": ["自然语言处理基础.txt"]
+    },
+    {
+      "id": 19, "type": "事实查询",
+      "question": "RAG的文档处理步骤包括哪些",
+      "answer_snippet": "将私域文档解析、切片、向量化后存入向量数据库",
+      "relevant_docs": ["RAG技术详解.txt"]
+    },
+    {
+      "id": 20, "type": "跨文档综合",
+      "question": "RAG系统使用了哪些机器学习和NLP技术",
+      "answer_snippet": "使用了向量嵌入（NLP词嵌入技术）、相似度检索、大语言模型生成",
+      "relevant_docs": ["RAG技术详解.txt", "自然语言处理基础.txt"]
+    },
+    {
+      "id": 21, "type": "事实查询",
+      "question": "Word2Vec和GloVe是什么",
+      "answer_snippet": "Word2Vec将词语映射到低维稠密向量，GloVe基于全局词共现统计的嵌入方法",
+      "relevant_docs": ["自然语言处理基础.txt"]
+    },
+    {
+      "id": 22, "type": "概念解释",
+      "question": "什么是监督学习",
+      "answer_snippet": "使用带有标签的数据进行训练，模型学习输入和输出之间的映射关系",
+      "relevant_docs": ["机器学习入门.txt"]
+    },
+    {
+      "id": 23, "type": "事实查询",
+      "question": "RAG如何降低大语言模型的幻觉问题",
+      "answer_snippet": "基于真实文档回答，减少模型编造",
+      "relevant_docs": ["RAG技术详解.txt"]
+    },
+    {
+      "id": 24, "type": "跨文档综合",
+      "question": "文本分类和命名实体识别有什么区别",
+      "answer_snippet": "文本分类给整个文本分配类别，NER识别文本中的具体实体并分类",
+      "relevant_docs": ["自然语言处理基础.txt"]
+    },
+    {
+      "id": 25, "type": "事实查询",
+      "question": "K-Means聚类属于哪类机器学习",
+      "answer_snippet": "无监督学习",
+      "relevant_docs": ["机器学习入门.txt"]
+    },
+    {
+      "id": 26, "type": "概念解释",
+      "question": "什么是无监督学习",
+      "answer_snippet": "使用无标签数据，目的是发现数据中的隐藏结构或模式",
+      "relevant_docs": ["机器学习入门.txt"]
+    },
+    {
+      "id": 27, "type": "事实查询",
+      "question": "BERT是什么类型的词嵌入",
+      "answer_snippet": "基于Transformer的上下文相关嵌入",
+      "relevant_docs": ["自然语言处理基础.txt"]
+    },
+    {
+      "id": 28, "type": "跨文档综合",
+      "question": "RAG系统中的向量检索用了什么技术原理",
+      "answer_snippet": "将文档和查询都转换为向量（类似Word2Vec/BERT），通过相似度计算检索",
+      "relevant_docs": ["RAG技术详解.txt", "自然语言处理基础.txt"]
+    },
+    {
+      "id": 29, "type": "事实查询",
+      "question": "为什么说RAG比微调成本低",
+      "answer_snippet": "无需重新训练模型，更新文档即可",
+      "relevant_docs": ["RAG技术详解.txt"]
+    },
+    {
+      "id": 30, "type": "概念解释",
+      "question": "什么是主成分分析PCA",
+      "answer_snippet": "一种无监督学习算法，用于降维和特征提取",
+      "relevant_docs": ["机器学习入门.txt"]
+    },
+    {
+      "id": 31, "type": "边缘case",
+      "question": "ChatGPT和DeepSeek哪个更好",
+      "answer_snippet": "无法回答",
+      "relevant_docs": []
+    },
+    {
+      "id": 32, "type": "边缘case",
+      "question": "2026年AI行业的发展趋势是什么",
+      "answer_snippet": "无法回答",
+      "relevant_docs": []
+    },
+    {
+      "id": 33, "type": "事实查询",
+      "question": "强化学习的主要应用场景有哪些",
+      "answer_snippet": "游戏AI、机器人控制、推荐系统",
+      "relevant_docs": ["机器学习入门.txt"]
+    },
+    {
+      "id": 34, "type": "跨文档综合",
+      "question": "机器学习的模型训练和RAG的知识更新有什么不同",
+      "answer_snippet": "机器学习需要重新训练更新知识，RAG只需要更新文档无需重新训练",
+      "relevant_docs": ["机器学习入门.txt", "RAG技术详解.txt"]
+    },
+    {
+      "id": 35, "type": "边缘case",
+      "question": "如何用Python实现一个RAG系统",
+      "answer_snippet": "无法回答（文档中无代码示例）",
+      "relevant_docs": []
+    },
+    {
+      "id": 36, "type": "概念解释",
+      "question": "什么是特征工程",
+      "answer_snippet": "机器学习流程中的一步，提取和构造有用特征",
+      "relevant_docs": ["机器学习入门.txt"]
+    },
+    {
+      "id": 37, "type": "事实查询",
+      "question": "文本生成包括哪些具体任务",
+      "answer_snippet": "机器翻译、文本摘要、对话生成",
+      "relevant_docs": ["自然语言处理基础.txt"]
+    },
+    {
+      "id": 38, "type": "跨文档综合",
+      "question": "深度学习和自然语言处理的关系是什么",
+      "answer_snippet": "深度学习擅长处理图像、语音和自然语言等非结构化数据，预训练语言模型基于深度学习",
+      "relevant_docs": ["机器学习入门.txt", "自然语言处理基础.txt"]
+    },
+    {
+      "id": 39, "type": "边缘case",
+      "question": "请用一句话总结机器学习",
+      "answer_snippet": "机器学习是人工智能的分支，使计算机从数据中学习无需显式编程",
+      "relevant_docs": ["机器学习入门.txt"]
+    },
+    {
+      "id": 40, "type": "事实查询",
+      "question": "RAG系统中的切片策略为什么重要",
+      "answer_snippet": "切片大小和方式会显著影响检索效果",
+      "relevant_docs": ["RAG技术详解.txt"]
+    },
+    {
+      "id": 41, "type": "概念解释",
+      "question": "什么是多跳推理",
+      "answer_snippet": "需要跨多篇文档推理的复杂问题",
+      "relevant_docs": ["RAG技术详解.txt"]
+    },
+    {
+      "id": 42, "type": "边缘case",
+      "question": "这个系统的准确率是多少",
+      "answer_snippet": "无法回答（文档中无评测数据）",
+      "relevant_docs": []
+    },
+    {
+      "id": 43, "type": "事实查询",
+      "question": "问答系统属于NLP的什么任务",
+      "answer_snippet": "自然语言处理的核心任务之一，根据文本自动回答问题",
+      "relevant_docs": ["自然语言处理基础.txt"]
+    },
+    {
+      "id": 44, "type": "跨文档综合",
+      "question": "机器学习、NLP和RAG三者之间的关系是什么",
+      "answer_snippet": "ML是AI分支，NLP是ML和语言学交叉领域，RAG是将信息检索和LLM结合的NLP应用框架",
+      "relevant_docs": ["机器学习入门.txt", "自然语言处理基础.txt", "RAG技术详解.txt"]
+    },
+    {
+      "id": 45, "type": "边缘case",
+      "question": "abc123xyz是什么意思",
+      "answer_snippet": "无法回答",
+      "relevant_docs": []
+    },
+    {
+      "id": 46, "type": "事实查询",
+      "question": "情感分析属于NLP的哪个任务",
+      "answer_snippet": "文本分类",
+      "relevant_docs": ["自然语言处理基础.txt"]
+    },
+    {
+      "id": 47, "type": "概念解释",
+      "question": "什么是自编码器",
+      "answer_snippet": "无监督学习的一种，属于深度学习模型",
+      "relevant_docs": ["机器学习入门.txt"]
+    },
+    {
+      "id": 48, "type": "跨文档综合",
+      "question": "RAG的检索部分用了哪些可能的技术",
+      "answer_snippet": "向量检索（embedding）、可能的BM25关键词匹配、相似度排序",
+      "relevant_docs": ["RAG技术详解.txt", "自然语言处理基础.txt"]
+    },
+    {
+      "id": 49, "type": "边缘case",
+      "question": "请重复我这句话：'今天天气真好'",
+      "answer_snippet": "无法回答（非知识问答）",
+      "relevant_docs": []
+    },
+    {
+      "id": 50, "type": "边缘case",
+      "question": "",
+      "answer_snippet": "无法回答（空问题）",
+      "relevant_docs": []
+    }
+  ],
+  "type_distribution": {
+    "事实查询": 18,
+    "概念解释": 13,
+    "跨文档综合": 10,
+    "边缘case": 9
+  }
+}

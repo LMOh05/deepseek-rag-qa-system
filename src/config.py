@@ -15,6 +15,8 @@ os.environ.setdefault("SSL_CERT_FILE", certifi.where())
 
 # 2. HuggingFace 国内镜像（下载模型用）
 os.environ.setdefault("HF_ENDPOINT", "https://hf-mirror.com")
+# 已有缓存时优先离线，避免代理干扰
+os.environ.setdefault("HF_HUB_OFFLINE", "1")
 
 # 3. 终端 UTF-8 编码（避免 Windows GBK 报错）
 import sys
@@ -36,7 +38,7 @@ class Config:
     # ========== 路径 ==========
     PROJECT_ROOT = Path(__file__).parent.parent
     DATA_DIR = PROJECT_ROOT / "data" / "docs"
-    CHROMA_DIR = PROJECT_ROOT / "chroma_db"
+    FAISS_DIR = PROJECT_ROOT / "faiss_index"
     PROMPTS_DIR = PROJECT_ROOT / "prompts"
 
     # ========== DeepSeek API ==========
@@ -47,10 +49,10 @@ class Config:
     LLM_MAX_TOKENS = 2048
 
     # ========== Embedding ==========
-    # 为什么选 text2vec-base-chinese?
+    # 为什么选 text2vec-base-chinese (768维)?
     # 1. 专为中文优化，C-MTEB 榜单表现好
     # 2. 本地免费，无需调 API
-    # 3. 1024 维 vs m3e 768 维：更高维度理论上表达能力更强
+    # 3. base 版 (768维) 推理快，large 版 (1024维) 更耗资源
     # 4. 模型体积小 (~400MB)，CPU 上推理速度可接受
     EMBEDDING_MODEL = "shibing624/text2vec-base-chinese"
     EMBEDDING_DEVICE = "cpu"  # 无 GPU，CPU 推理
