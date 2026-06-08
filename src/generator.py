@@ -75,6 +75,7 @@ class Generator:
     def __init__(self, model: str = None, temperature: float = None,
                  system_prompt: str = None):
         from src.config import config
+        import httpx
 
         self.model = model or config.DEEPSEEK_MODEL
         self.temperature = temperature or config.LLM_TEMPERATURE
@@ -86,6 +87,7 @@ class Generator:
             max_tokens=config.LLM_MAX_TOKENS,
             api_key=config.DEEPSEEK_API_KEY,
             api_base=config.DEEPSEEK_BASE_URL,
+            http_client=httpx.Client(verify=False, trust_env=False),
         )
 
     def _build_prompt(self, question: str, docs: List[Document]) -> str:
