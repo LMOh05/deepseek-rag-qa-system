@@ -1,0 +1,21 @@
+# 敏感文件
+.env
+
+# 向量库（本地持久化）
+chroma_db/
+faiss_index/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# IDE
+.idea/
+.vscode/
+
+# 本地开发文档（不上传 GitHub）
+CLAUDE.md
+阶段一验证指南.md
+项目规划.md
+项目计划.md

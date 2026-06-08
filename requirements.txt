@@ -1,0 +1,30 @@
+# RAG 核心
+langchain>=0.3.0
+langchain-community>=0.3.0
+langchain-deepseek>=0.1.0
+
+# 向量数据库
+chromadb>=0.5.0
+
+# Embedding 模型
+sentence-transformers>=3.0.0
+
+# 文档解析
+pypdf2>=3.0.0
+python-docx>=1.0.0
+
+# 稀疏检索
+rank-bm25>=0.2.2
+
+# 重排序（阶段二）
+# pip install FlagEmbedding  # 需要时再装，包较大
+
+# 环境变量
+python-dotenv>=1.0.0
+
+# 微调（阶段四，在 Colab 上用）
+# transformers>=4.45.0
+# peft>=0.12.0
+# accelerate>=0.34.0
+# datasets>=3.0.0
+# bitsandbytes>=0.44.0
